@@ -6,7 +6,6 @@ class ListFile:
 
     def printfile(self,file_json):
         self.stack.append(file_json[0]["name"])
-        print(self.stack)
         for i in range(1,len(file_json)):
             if isinstance(file_json[i], list):
                  self.printfile(file_json[i])
